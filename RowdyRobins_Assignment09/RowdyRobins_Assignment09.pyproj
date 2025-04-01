@@ -31,6 +31,12 @@
     <Compile Include="databaseManagementPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="queryPackage\query.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="queryPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="randomPickPackage\randomPick.py">
       <SubType>Code</SubType>
     </Compile>
@@ -41,6 +47,7 @@
   <ItemGroup>
     <Folder Include="main\" />
     <Folder Include="databaseManagementPackage\" />
+    <Folder Include="queryPackage\" />
     <Folder Include="randomPickPackage\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
