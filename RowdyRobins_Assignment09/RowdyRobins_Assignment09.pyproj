@@ -31,6 +31,12 @@
     <Compile Include="databaseManagementPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="outputPackage\output.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="outputPackage\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="queryPackage\query.py">
       <SubType>Code</SubType>
     </Compile>
@@ -47,6 +53,7 @@
   <ItemGroup>
     <Folder Include="main\" />
     <Folder Include="databaseManagementPackage\" />
+    <Folder Include="outputPackage\" />
     <Folder Include="queryPackage\" />
     <Folder Include="randomPickPackage\" />
   </ItemGroup>

@@ -20,7 +20,7 @@
 from databaseManagementPackage.databaseManagement import *
 from randomPickPackage.randomPick import *
 from queryPackage.query import *
-
+from outputPackage.output import *
 
 dbm = DatabaseManagement()
 conn = dbm.connect_to_database()
@@ -52,3 +52,6 @@ number_sold_qurey_stetement = qrl.query_number_sold(product_id)
 number_sold = dbm.submit_sql_to_server(conn, number_sold_qurey_stetement)
 number_sold = number_sold.fetchall()[0][0]
 
+# Question7
+sts = Sentense()
+sts.get_sentense(description, manufacturer, brand, number_sold)
