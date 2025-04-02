@@ -8,7 +8,7 @@
 # Brief Description of the assignment: The assignment is to develop a VS project that accesses our SQL Server.
 
 # Brief Description of what this module does: This module creates a class that connects with our database
-# Citations: ChatGPT
+# Citations:
 
 # Anything else that's relevant:
 

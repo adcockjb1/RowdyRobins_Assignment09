@@ -12,13 +12,14 @@
 # Brief Description of the assignment: The assignment is to develop a VS project that accesses our SQL Server.
 
 # Brief Description of what this module does: This module completes the question requirments outlined in the assignment details
-# Citations: ChatGPT
+# Citations:
 
 # Anything else that's relevant:
 
 
 from databaseManagementPackage.databaseManagement import *
 from randomPickPackage.randomPick import *
+from queryPackage.query import *
 
 
 dbm = DatabaseManagement()
@@ -34,3 +35,20 @@ product_id = random_row.ProductID
 description = random_row.Description
 manufacturer_id = random_row.ManufacturerID
 brand_id = random_row.BrandID
+
+# Question3,4
+qrl = Query()
+manufacure_qurey_stetement = qrl.query_manufacurer(manufacturer_id)
+manufacturer = dbm.submit_sql_to_server(conn, manufacure_qurey_stetement)
+manufacturer = manufacturer.fetchall()[0][0]
+
+# Question5
+brand_qurey_stetement = qrl.query_brand(brand_id)
+brand = dbm.submit_sql_to_server(conn, brand_qurey_stetement)
+brand = brand.fetchall()[0][0]
+
+# Question6
+number_sold_qurey_stetement = qrl.query_number_sold(product_id)
+number_sold = dbm.submit_sql_to_server(conn, number_sold_qurey_stetement)
+number_sold = number_sold.fetchall()[0][0]
+
